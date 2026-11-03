@@ -9,18 +9,17 @@ app = FastAPI(title="Wine Classifier API", description="FastAPI lab using the sk
 CUSTOM_CSS = """
 <style>
 body { background: linear-gradient(135deg, #1a0010 0%, #4a0e2b 45%, #2b0a3d 100%) fixed; min-height: 100vh; }
-.swagger-ui { color: #f3e6ec; }
-.swagger-ui .topbar { background: rgba(0,0,0,.35); border-bottom: 2px solid #c2185b; }
-.swagger-ui .info .title, .swagger-ui .info p, .swagger-ui .opblock-tag,
-.swagger-ui .opblock .opblock-summary-path, .swagger-ui .opblock .opblock-summary-description,
-.swagger-ui table thead tr th, .swagger-ui .parameter__name, .swagger-ui .response-col_status,
-.swagger-ui .tab li, .swagger-ui .opblock-section-header h4, .swagger-ui label, .swagger-ui .model-title { color: #f8e1ea !important; }
+.swagger-ui, .swagger-ui * { color: #ff4d4d !important; fill: #ff4d4d !important; }
+.swagger-ui .topbar { background: rgba(0,0,0,.5); border-bottom: 2px solid #ff1a1a; }
 .swagger-ui .info .title::before { content: "\1F377  "; }
-.swagger-ui .opblock { background: rgba(255,255,255,.06) !important; backdrop-filter: blur(8px);
-  border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.4); }
-.swagger-ui .opblock .opblock-section-header { background: rgba(0,0,0,.25); }
-.swagger-ui section.models { background: rgba(255,255,255,.05); border-radius: 12px; }
-.swagger-ui .btn.execute { background: #c2185b; border-color: #c2185b; }
+.swagger-ui .opblock, .swagger-ui section.models, .swagger-ui .model-box,
+.swagger-ui .opblock-tag, .swagger-ui table, .swagger-ui .responses-inner,
+.swagger-ui .highlight-code, .swagger-ui .microlight {
+  background: rgba(0,0,0,.45) !important; border: 2px solid #ff1a1a !important; border-radius: 10px; }
+.swagger-ui .opblock .opblock-section-header { background: rgba(0,0,0,.6) !important; border-bottom: 1px solid #ff1a1a; }
+.swagger-ui input, .swagger-ui textarea, .swagger-ui select, .swagger-ui .btn {
+  background: #1a0008 !important; border: 2px solid #ff1a1a !important; border-radius: 6px; }
+.swagger-ui .btn.execute { background: #ff1a1a !important; color: #fff !important; }
 .swagger-ui .scheme-container { background: transparent; box-shadow: none; }
 </style>
 """
